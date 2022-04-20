@@ -8,11 +8,11 @@
 
     <h1>OCI Example</h1>
 
-    <form>
+    <form method="POST" action="./subission.php">
 
     <label>
         Enter a any string:
-        <input type="text" id="my_str" required />
+        <input type="text" id="my_str" name="my_str" required />
     </label>
     <input type="submit" id="submit_btn" value="Submit" />
 
