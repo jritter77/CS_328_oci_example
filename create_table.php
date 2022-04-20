@@ -1,7 +1,7 @@
 <?php
 
-$username = "jr550";
-$password = "Wo0dabu9a";
+$username = "";
+$password = "";
 
 
 $db_conn_str =
