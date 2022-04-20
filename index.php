@@ -18,6 +18,8 @@
 
     </form>
 
+    <a href="create_table.php">Create / Clear Table</a>
+
 
   </body>
 </html>
