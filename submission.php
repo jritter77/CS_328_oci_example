@@ -17,7 +17,6 @@ if (!$conn) {
 }
 
 
-echo $_POST['my_str'];
 
 
 $props_query_str = '
@@ -36,6 +35,7 @@ oci_execute($props_query_stmt, OCI_COMMIT_ON_SUCCESS);
 
 echo oci_free_statement($props_query_stmt);
 
+echo $_POST['my_str'] . 'Submitted to DB!';
 
 
 
