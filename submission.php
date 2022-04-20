@@ -17,15 +17,15 @@ if (!$conn) {
 echo $_POST['my_str'];
 
 
-
 $props_query_str = '
-        
+        insert into example
+        values (:my_str)
 ';
 
 
 $props_query_stmt = oci_parse($conn, $props_query_str);
 
-oci_bind_by_name($props_query_stmt, ':seller_name', $req->seller_name);
+oci_bind_by_name($props_query_stmt, ':my_str', $_POST['my_str']);;
 
 
 oci_execute($props_query_stmt, OCI_COMMIT_ON_SUCCESS);
