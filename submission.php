@@ -27,9 +27,12 @@ $props_query_str = '
 
 $props_query_stmt = oci_parse($conn, $props_query_str);
 
+
+// bind vars passed from form to $_POST to query statement
 oci_bind_by_name($props_query_stmt, ':my_str', $_POST['my_str']);;
 
 
+// MUST USE 'OCI_COMMIT_ON_SUCCESS" OR YOUR INSERT WILL HAVE NO EFFECT!!!
 oci_execute($props_query_stmt, OCI_COMMIT_ON_SUCCESS);
 
 

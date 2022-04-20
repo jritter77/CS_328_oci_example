@@ -17,7 +17,7 @@ if (!$conn) {
 }
 
 
-
+// Select all rows from DB
 $props_query_str = '
         select * from example
 ';
@@ -27,6 +27,8 @@ $props_query_stmt = oci_parse($conn, $props_query_str);
 
 oci_execute($props_query_stmt, OCI_DEFAULT);
 
+
+// Display results as an ordered list
 echo "<ol>";
 
 $results = array();

@@ -10,6 +10,8 @@ $db_conn_str =
                                        (PORT = 1521))
                             (CONNECT_DATA = (SID = STUDENT)))";
 
+
+// Connect to DB
 $conn = oci_connect($username, $password, $db_conn_str);
 
 if (!$conn) {
@@ -17,6 +19,7 @@ if (!$conn) {
 }
 
 
+// Drop table if exists
 $create_table_str = "
 drop table example
 ";
@@ -27,6 +30,10 @@ oci_execute($create_table_stmt, OCI_COMMIT_ON_SUCCESS);
 
 oci_free_statement($create_table_stmt);
 
+
+
+
+// Create table
 $create_table_str = "
     create table example(
         submission varchar(30)
