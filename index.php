@@ -19,7 +19,7 @@
     </form>
 
     <a href="create_table.php">Create / Clear Table</a>
-    <a href="show_table.php">Create / Clear Table</a>
+    <a href="show_table.php">Show Table</a>
 
 
   </body>
