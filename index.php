@@ -18,8 +18,13 @@
 
     </form>
 
-    <a href="create_table.php">Create / Clear Table</a>
-    <a href="show_table.php">Show Table</a>
+    <div>
+      <a href="create_table.php">Create / Clear Table</a>
+    </div>
+
+    <div>
+      <a href="show_table.php">Show Table</a>
+    </div>
 
 
   </body>
