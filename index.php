@@ -8,7 +8,7 @@
 
     <h1>OCI Example</h1>
 
-    <form method="POST" action="./subission.php">
+    <form method="POST" action="./submission.php">
 
     <label>
         Enter a any string:
