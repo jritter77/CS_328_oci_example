@@ -24,10 +24,14 @@ $props_query_stmt = oci_parse($conn, $props_query_str);
 
 oci_execute($props_query_stmt, OCI_DEFAULT);
 
+echo "<ol>";
+
 $results = array();
 while ($row = oci_fetch_array($props_query_stmt, OCI_ASSOC)) {
-    echo json_encode($row);
+    echo "<li>" . $row['SUBMISSION'] "</li>";
 }
+
+echo "</ol>";
 
 oci_free_statement($props_query_stmt);
 
