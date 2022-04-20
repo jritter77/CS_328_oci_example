@@ -24,8 +24,9 @@ $props_query_stmt = oci_parse($conn, $props_query_str);
 
 oci_execute($props_query_stmt, OCI_DEFAULT);
 
+$results = array();
 while ($row = oci_fetch_array($props_query_stmt, OCI_ASSOC)) {
-    echo $row;
+    echo json_encode($row);
 }
 
 oci_free_statement($props_query_stmt);
