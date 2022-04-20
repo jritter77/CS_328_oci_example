@@ -28,7 +28,7 @@ echo "<ol>";
 
 $results = array();
 while ($row = oci_fetch_array($props_query_stmt, OCI_ASSOC)) {
-    echo "<li>" . $row['SUBMISSION'] "</li>";
+    echo "<li>" . $row['SUBMISSION'] . "</li>";
 }
 
 echo "</ol>";
