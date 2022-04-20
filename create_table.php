@@ -39,9 +39,11 @@ oci_execute($create_table_stmt, OCI_COMMIT_ON_SUCCESS);
 
 oci_free_statement($create_table_stmt);
 
-echo 'Table Created!';
+echo 'Table Created/Cleared!';
 
 oci_close($conn);
 
 
 ?>
+
+<a href="index.php">Back</a>

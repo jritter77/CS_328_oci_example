@@ -35,7 +35,7 @@ oci_execute($props_query_stmt, OCI_COMMIT_ON_SUCCESS);
 
 echo oci_free_statement($props_query_stmt);
 
-echo $_POST['my_str'] . 'Submitted to DB!';
+echo $_POST['my_str'] . ' Submitted to DB!';
 
 
 
@@ -45,3 +45,5 @@ oci_close($conn);
 
 
 ?>
+
+<a href="index.php">Back</a>
